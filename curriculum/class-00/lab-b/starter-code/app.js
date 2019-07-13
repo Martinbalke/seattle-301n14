@@ -182,14 +182,14 @@ Student.prototype.scope = function() {
 
 console.log(joe.scope());
 
-Student.prototype.scopeArrow = () => console.log(this);
+// Student.prototype.scopeArrow = () => console.log(this);
 
-console.log(joe.scopeArrow());
+// console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-// undefined
+// This is the object instance known as joe
 // 2. What is "this" when joe.scopeArrow() is invoked?
-// function
+// Window
 // 3. Explain why "this" is different when an arrow function is used.
 // Arrow functions perform lexical binding so the this keyword only refers to whatever scope the arrow function is currently being used in
